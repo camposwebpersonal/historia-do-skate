@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Uma viagem interativa pela história do skate: das calçadas da Califórnia aos Jogos Olímpicos.">
+  <meta name="theme-color" content="#10110f">
+  <title>História do Skate — Do asfalto ao pódio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="topbar" id="topo">
+    <a class="brand" href="#topo" aria-label="História do Skate — início"><span>SK8</span><b>HISTÓRIA</b></a>
+    <button class="menu-button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav aria-label="Navegação principal">
+      <a href="#origens">Origens</a>
+      <a href="#linha-do-tempo">Linha do tempo</a>
+      <a href="#modalidades">Modalidades</a>
+      <a href="#brasil">Brasil</a>
+    </nav>
+    <a class="nav-cta" href="#linha-do-tempo">Explorar história <span>↘</span></a>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-image" role="img" aria-label="Skatistas de diferentes gerações atravessando pistas ao pôr do sol"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow"><i></i> CULTURA • ARTE • ESPORTE</p>
+        <h1 id="hero-title">A história<br>não anda.<br><em>Ela desliza.</em></h1>
+        <p>Do surfe de calçada às maiores pistas do planeta: descubra como uma prancha com rodas transformou cidades, comportamento e gerações.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#linha-do-tempo">Viajar no tempo <span>↓</span></a>
+          <a class="button quiet" href="#origens"><span class="play">▶</span> Começar pelas origens</a>
+        </div>
+      </div>
+      <div class="hero-stats reveal">
+        <div><strong>70+</strong><span>anos de evolução</span></div>
+        <div><strong>2020</strong><span>estreia olímpica*</span></div>
+        <div><strong>∞</strong><span>formas de criar</span></div>
+      </div>
+      <p class="hero-note">*Jogos de Tóquio realizados em 2021</p>
+      <a class="scroll-cue" href="#origens" aria-label="Rolar para as origens">SCROLL <i></i></a>
+    </section>
+
+    <section class="origins section" id="origens">
+      <div class="section-label reveal"><span>01</span> ONDE TUDO COMEÇOU</div>
+      <div class="origins-grid">
+        <div class="origins-copy reveal">
+          <p class="kicker">CALIFÓRNIA • ANOS 1950</p>
+          <h2>Quando o mar ficou sem ondas, <em>a rua virou oceano.</em></h2>
+          <p>Surfistas começaram a adaptar rodas de patins a pequenas pranchas de madeira. A ideia era simples: reproduzir no concreto a sensação das curvas sobre a água.</p>
+          <p>Chamado primeiro de <strong>sidewalk surfing</strong>, o skate nasceu da improvisação. O objeto mudou muito; o impulso de inventar caminhos continua o mesmo.</p>
+          <blockquote>“O skate nasceu como solução para um dia sem ondas e virou uma linguagem mundial.”</blockquote>
+        </div>
+        <div class="origin-card reveal">
+          <span class="stamp">SURF<br>THE<br>STREETS</span>
+          <div class="board-diagram" aria-label="Ilustração abstrata de um skate antigo">
+            <div class="deck"></div><i class="wheel w1"></i><i class="wheel w2"></i>
+          </div>
+          <div class="origin-meta"><b>01</b><p><strong>MADEIRA + RODAS</strong><span>A fórmula que abriu um mundo novo.</span></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline section" id="linha-do-tempo">
+      <div class="section-heading reveal">
+        <div><div class="section-label light"><span>02</span> LINHA DO TEMPO</div><h2>Sete décadas<br>em movimento.</h2></div>
+        <p>Arraste a linha ou selecione um período para acompanhar as mudanças que reinventaram o skate.</p>
+      </div>
+      <div class="era-tabs" role="tablist" aria-label="Décadas da história do skate">
+        <button role="tab" aria-selected="true" data-era="0">1950</button>
+        <button role="tab" aria-selected="false" data-era="1">1960</button>
+        <button role="tab" aria-selected="false" data-era="2">1970</button>
+        <button role="tab" aria-selected="false" data-era="3">1980</button>
+        <button role="tab" aria-selected="false" data-era="4">1990</button>
+        <button role="tab" aria-selected="false" data-era="5">2000</button>
+        <button role="tab" aria-selected="false" data-era="6">2020+</button>
+      </div>
+      <article class="era-panel reveal" aria-live="polite">
+        <div class="era-number" id="era-number">50</div>
+        <div class="era-content">
+          <p class="kicker" id="era-kicker">1950–1959 • O PRIMEIRO IMPULSO</p>
+          <h3 id="era-title">Surfar o asfalto</h3>
+          <p id="era-text">Em cidades costeiras da Califórnia, rodas de patins encontram tábuas de madeira. Nasce uma maneira de continuar surfando quando o oceano não colabora.</p>
+          <div class="era-tags" id="era-tags"><span>Sidewalk surfing</span><span>Feito à mão</span><span>Califórnia</span></div>
+        </div>
+        <div class="era-visual" aria-hidden="true"><span>◒</span><i></i><b>ROLL<br>FOREVER</b></div>
+      </article>
+      <div class="timeline-controls">
+        <button id="prev-era" aria-label="Período anterior">←</button>
+        <div class="progress"><i id="era-progress"></i></div>
+        <span id="era-count">01 / 07</span>
+        <button id="next-era" aria-label="Próximo período">→</button>
+      </div>
+    </section>
+
+    <section class="anatomy section">
+      <div class="section-label reveal"><span>03</span> ENGENHARIA DA LIBERDADE</div>
+      <div class="anatomy-grid">
+        <div class="anatomy-title reveal"><p class="kicker">PEÇAS QUE MUDARAM O JOGO</p><h2>Uma máquina simples.<br><em>Possibilidades infinitas.</em></h2></div>
+        <p class="anatomy-intro reveal">Cada salto histórico veio acompanhado de uma evolução no equipamento. Conheça os componentes que dão vida ao skate moderno.</p>
+      </div>
+      <div class="skate-exploded reveal" aria-label="Diagrama das partes de um skate">
+        <div class="part-label p-deck"><b>01</b><strong>SHAPE</strong><span>7 lâminas de maple</span></div>
+        <div class="part-label p-truck"><b>02</b><strong>TRUCKS</strong><span>Direção e estabilidade</span></div>
+        <div class="part-label p-wheel"><b>03</b><strong>RODAS</strong><span>Uretano e velocidade</span></div>
+        <div class="part-label p-bearing"><b>04</b><strong>ROLAMENTOS</strong><span>Precisão em movimento</span></div>
+        <div class="exploded-board"><div class="grip"></div><div class="truck t1"></div><div class="truck t2"></div><i></i><i></i><i></i><i></i></div>
+      </div>
+    </section>
+
+    <section class="modalities section" id="modalidades">
+      <div class="section-heading dark reveal">
+        <div><div class="section-label"><span>04</span> MUITOS CAMINHOS</div><h2>Um skate.<br>Vários mundos.</h2></div>
+        <p>O terreno muda, o estilo muda e a criatividade encontra novas regras.</p>
+      </div>
+      <div class="modality-grid">
+        <article class="modality featured reveal"><span>01</span><div class="modality-icon">╱▱</div><p>OBSTÁCULOS URBANOS</p><h3>Street</h3><small>Escadas, corrimãos, bancos e tudo o que a cidade oferece.</small></article>
+        <article class="modality reveal"><span>02</span><div class="modality-icon">◡</div><p>TRANSIÇÕES FLUIDAS</p><h3>Park</h3><small>Bowls, curvas e velocidade em linhas contínuas.</small></article>
+        <article class="modality reveal"><span>03</span><div class="modality-icon">∪</div><p>ALTURA E AMPLITUDE</p><h3>Vertical</h3><small>Half-pipes, aéreos e manobras acima da borda.</small></article>
+        <article class="modality reveal"><span>04</span><div class="modality-icon">✣</div><p>TÉCNICA E EQUILÍBRIO</p><h3>Freestyle</h3><small>Coreografias e controle preciso sobre terreno plano.</small></article>
+      </div>
+    </section>
+
+    <section class="brazil section" id="brasil">
+      <div class="brazil-mark" aria-hidden="true">BR</div>
+      <div class="brazil-content reveal">
+        <div class="section-label"><span>05</span> O BRASIL SOBRE RODAS</div>
+        <p class="kicker">DA RUA PARA O MUNDO</p>
+        <h2>Ginga, coragem<br>e <em>identidade.</em></h2>
+        <p>O skate chegou ao país nos anos 1960, ganhou personalidade própria nos anos 1980 e se tornou potência mundial nos anos 1990. Das pistas improvisadas aos pódios, o Brasil transformou criatividade em assinatura.</p>
+        <div class="brazil-facts">
+          <div><strong>1960s</strong><span>Primeiras ondas por aqui</span></div>
+          <div><strong>3× 🥈</strong><span>Brasil em Tóquio 2020</span></div>
+          <div><strong>2× 🥉</strong><span>Brasil em Paris 2024</span></div>
+        </div>
+      </div>
+      <div class="brazil-ribbon"><span>CRIATIVIDADE • RESISTÊNCIA • COMUNIDADE • LIBERDADE •</span><span>CRIATIVIDADE • RESISTÊNCIA • COMUNIDADE • LIBERDADE •</span></div>
+    </section>
+
+    <section class="olympic section">
+      <div class="olympic-card reveal">
+        <div><p class="kicker">TÓQUIO 2020 → PARIS 2024</p><h2>Da contracultura<br><em>ao palco olímpico.</em></h2></div>
+        <div><p>O skate estreou nos Jogos de Tóquio, realizados em 2021, com as modalidades Street e Park. Em Paris, voltou ao programa e ocupou o coração da cidade na Place de la Concorde.</p><a href="#fontes">Conferir fontes históricas <span>↘</span></a></div>
+      </div>
+    </section>
+
+    <section class="manifesto">
+      <p class="reveal">O skate nunca pediu licença.</p>
+      <h2 class="reveal">CAIU. LEVANTOU.<br><em>REINVENTOU O CHÃO.</em></h2>
+      <div class="manifesto-line"><span>CONTINUE ROLANDO</span><i></i><b>∞</b></div>
+    </section>
+
+    <section class="sources section" id="fontes">
+      <div><p class="kicker">PESQUISA E MEMÓRIA</p><h2>Fontes para continuar a viagem.</h2></div>
+      <div class="source-links">
+        <a href="https://www.si.edu/spotlight/skateboards" target="_blank" rel="noopener"><span>01</span><b>Smithsonian</b><small>Skateboards and Invention ↗</small></a>
+        <a href="https://cbsk.com.br/assets/docs/livro/somostodoscbsk-a-historia-da-confederacao-brasileira-de-skate.pdf" target="_blank" rel="noopener"><span>02</span><b>CBSk</b><small>História do skate brasileiro ↗</small></a>
+        <a href="https://olympics.com/en/sports/skateboarding/" target="_blank" rel="noopener"><span>03</span><b>Olympics</b><small>Skateboarding nos Jogos ↗</small></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#topo"><span>SK8</span><b>HISTÓRIA</b></a>
+    <p>Uma homenagem à cultura que transformou concreto em possibilidade.</p>
+    <a href="#topo">VOLTAR AO TOPO ↑</a>
+  </footer>
+</body>
+</html>
